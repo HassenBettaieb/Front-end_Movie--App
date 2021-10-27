@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.list{
+ 
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  
+}
