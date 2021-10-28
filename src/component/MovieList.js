@@ -2,6 +2,7 @@ import MovieCard from "./MovieCard";
 
 function MoviesList({movies,searchTitle,rating}) {
   return (
+   
    <div className='list'>
  {movies
         .filter(
@@ -12,14 +13,14 @@ function MoviesList({movies,searchTitle,rating}) {
             movie.rate >= rating
         )
         .map((movie, i) => (
-          <MovieCard movie={movie} key={i} />
+          <MovieCard  movie={movie} key={i} />
         ))}
  
 
 
 
    </div>
-    
+  
   );
   
 }

@@ -1,4 +1,6 @@
 import { Card, Button } from "react-bootstrap";
+import {Link} from 'react-router-dom'
+
 function MovieCard ({movie}){
 
 return(
@@ -12,7 +14,7 @@ return(
     <Card.Text>
     {"⭐".repeat(movie.rate)}
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+   <Link to ={`/description/${movie.id}`}> <Button variant="primary">Go somewhere</Button> </Link>
   </Card.Body>
 </Card>
 )
